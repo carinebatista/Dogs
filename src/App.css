@@ -4,8 +4,9 @@
 
 body{
 	margin: 0;
+	padding-top: 4rem;
 	color: #333;
-	--type-first: 'Helvetica, Arial, sans-serif';
+	--type-first: Helvetica, Arial, sans-serif;
 	--type-second: 'Spectral', Georgia;
 	font-family:  var(--type-first);
 }
@@ -18,6 +19,10 @@ ul, li{
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+a{
+	text-decoration: none;
 }
 
 img{

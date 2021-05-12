@@ -1,0 +1,46 @@
+.photo:nth-child(2){
+	grid-column: 2 / 4;
+	grid-row: span 2;
+}
+
+@media (max-width: 40rem){
+	.photo:nth-child(2){
+		grid-column: initial;
+		grid-row: initial;
+	}
+}
+
+.photo{
+	display: grid;
+	border-radius: 0.2rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.photo img{
+	grid-area: 1/1; 
+}
+
+.visualizacao {
+	grid-area: 1/1;
+	background: rgba(0,0,0,0.3);
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.visualizacao::before{
+	width: 16px;
+	height: 10px;
+	content: '';
+	display: inline-block;
+	margin-right: 0.25rem;
+	background: url('../../Assets/visualizacao.svg') no-repeat;
+}
+
+.photo:hover .visualizacao{
+	display: flex;
+}

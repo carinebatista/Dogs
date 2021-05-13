@@ -2,6 +2,11 @@
 	display: grid;
 	grid-template-columns: 1fr auto;
 	align-items: stretch;
+	margin: 1rem;
+}
+
+.single.form{
+	margin: 1rem  0;
 }
 
 .textarea{
